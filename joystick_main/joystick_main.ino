@@ -13,6 +13,8 @@ void setup() {
   // begin the program using the common standard rate
   Serial.begin(115200);
   bleGamepad.begin();
+  // Set the all axis to 0
+  bleGamepad.setAxes(0,0,0,0);
 }
 
 void loop() {
@@ -25,7 +27,7 @@ void loop() {
    /*This determines if we should set the x position on wherever we are to the current
    x to avoid deadspaces */
    if (abs(mappedX - lastX) > 500) {
-      bleGamepad.setX(mappedX);
+      bleGamepad.setAxes(mappedX, 0, 0, 0);
       lastX = mappedX;
     }
   
