@@ -6,7 +6,7 @@
 //using the functions in the BleGamepad library we create a new gamepad
 BleGamepad bleGamepad;
 //the x pin on the joystick is on j13, so set it in the code
-int xPin = A11;
+int xPin = 21;
 // Get the prior x value
 int lastX = 0;
 void setup() {
@@ -34,6 +34,8 @@ void loop() {
     Serial.println("Right");
   } else if (mappedX < 0) {
     Serial.println("left");
+  } else {
+    Serial.println("Neutral");
   }
   }
   delay(500);  // avoid spamming BLE updates
