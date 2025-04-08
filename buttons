@@ -1,0 +1,67 @@
+#include <iostream>
+#include <conio.h> // For _kbhit() and _getch() on Windows
+#include <chrono>
+#include <thread>
+
+#ifdef _WIN32
+#include <windows.h> // For Sleep() on Windows
+#else
+#include <unistd.h> // For usleep() on non-Windows
+#endif
+
+// Function to simulate a short delay
+void delay(int milliseconds) {
+#ifdef _WIN32
+    Sleep(milliseconds);
+#else
+    usleep(milliseconds * 1000);
+#endif
+}
+
+int main() {
+    std::cout << "Press 'a' for Button A" << std::endl;
+    std::cout << "Press 'b' for Button B" << std::endl;
+    std::cout << "Press 's' for Button Select" << std::endl;
+    std::cout << "Press 't' for Button Start" << std::endl;
+    std::cout << "Press 'q' to quit" << std::endl;
+
+    while (true) {
+        if (_kbhit()) { // Check if a key has been pressed
+            char key = _getch(); // Get the pressed key
+
+            switch (key) {
+                case 'a':
+                case 'A':
+                    std::cout << "Button A pressed!" << std::endl;
+                    break;
+                case 'b':
+                case 'B':
+                    std::cout << "Button B pressed!" << std::endl;
+                    break;
+                case 's':
+                case 'S':
+                    std::cout << "Button Select pressed!" << std::endl;
+                    break;
+                case 't':
+                case 'T':
+                    std::cout << "Button Start pressed!" << std::endl;
+                    break;
+                case 'q':
+                case 'Q':
+                    std::cout << "Quitting program." << std::endl;
+                    return 0;
+                default:
+                    std::cout << "Unknown key pressed." << std::endl;
+                    break;
+            }
+
+            // Small delay to prevent rapid triggering from a single press
+            delay(100);
+        } else {
+            // Optional: Add a small delay if no key is pressed to reduce CPU usage
+            delay(50);
+        }
+    }
+
+    return 0;
+}
