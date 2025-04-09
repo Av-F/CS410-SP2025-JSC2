@@ -1,14 +1,12 @@
+
 //Our include statements
 // general layout adapted from https://github.com/lemmingDev/ESP32-BLE-Gamepad/blob/master/examples/Gamepad/Gamepad.ino
-
 #include <Arduino.h>
 #include <BleGamepad.h>
 //using the functions in the BleGamepad library we create a new gamepad
 BleGamepad bleGamepad;
 //the x pin on the joystick is on j13, so set it in the code
-int xPin = 21;
-// Get the prior x value
-int lastX = 0;
+int xPin = 35;
 void setup() {
   // begin the program using the common standard rate
   Serial.begin(115200);
@@ -26,20 +24,23 @@ void loop() {
    
    /*This determines if we should set the x position on wherever we are to the current
    x to avoid deadspaces */
-   if (abs(mappedX - lastX) > 500) {
-      bleGamepad.setAxes(mappedX, 0, 0, 0);
-      lastX = mappedX;
-    }
+   if (mappedX < 9700 || mappedX > 11400) {
+     bleGamepad.setX(mappedX); //map the gamepad accordingly if we arent in the deadzone
+  } else {
+    bleGamepad.setX(10000); // Joystick is in the deadzone, set to neutral
+  }
   
   // This if block determines if the direction we are going is left or right for debugging purposes
-  if(mappedX > 0) {
+   Serial.println(mappedX);
+  //11300 is the rough threshold for when we are going right
+  if(mappedX > 11310) {
     Serial.println("Right");
-  } else if (mappedX < 0) {
+  //9700 is the threshold to go left. Other than that we stay put. 
+  } else if (mappedX < 9600) {
     Serial.println("left");
   } else {
     Serial.println("Neutral");
   }
   }
-  delay(500);  // avoid spamming BLE updates
+  delay(50);  // avoid spamming BLE updates
 }
-
