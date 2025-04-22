@@ -10,7 +10,7 @@ int xPin = 35;
 //Y axis addition
 const int deadzone = 200; // Adjust this for stick drift
 int lastDirection = 0; // -1 for up, 1 for down, 0 for neutral
-const int yAxisPin = 34; // Analog pin for Y-axis
+const int yAxisPin = 26; // Analog pin for Y-axis
 
 void setup() {
   // begin the program using the common standard rate
