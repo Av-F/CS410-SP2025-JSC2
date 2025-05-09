@@ -2,7 +2,7 @@
 //Our include statements
 #include <Arduino.h>
 #include <BleGamepad.h>
-//using the functions in the BleGamepad library we create a new gamepad
+//Using the functions in the BleGamepad library, we create a new gamepad
 BleGamepad bleGamepad("The Better Controller");
 
 //Y axis addition
@@ -21,7 +21,7 @@ void setup() {
   // begin the program using the common standard rate
   Serial.begin(115200);
   bleGamepad.begin();
-  // Set the all axis to 0
+  // Set all axes to 0
   bleGamepad.setAxes(0,0,0,0);
   
   analogReadResolution(12); // ESP32 default is 12 bits (0-4095)
@@ -35,20 +35,16 @@ void setup() {
 
 
 void loop() {
-  // Check if the gampead is connected
+  // Check if the gamepad is connected
   if(bleGamepad.isConnected()) {
-   //y axis inputs
+   //y-axis and x-axis inputs
     int rawY = analogRead(Y_AXIS_PIN); // Read raw Y-axis value (0 - 4095)
     int rawX = analogRead(X_AXIS_PIN); //read the current x value
-  // Map to signed 16-bit range (-32767 to 32767) expected by BleGamepad
+  // Map to signed 16-bit range (0 to 32767) expected by BleGamepad
     int16_t yAxis = map(rawY, 0, 4095, 0, 32767);
     int16_t xAxis = map(rawX, 0, 4095, 0, 32767); /*map it to how BLE likes it
-    * Note that the 32767 comes from BLE itsself for the ranges */
-   /*This determines if we should set the x position to either left right or neutral depending on the joystick deadzone
-   I decided on these values based on rigerous testing on the behavior of the joystick when I kept it in neutral as it fluctuated
-   between 11400 and 9000, now I could continue to tweak the values to be to the exact, however keeping it very generalized shouldn't 
-   hurt the program*/
-
+    * Note that the 32767 comes from BLE itself for the ranges */
+   
    // Deadzone
    //if (abs(xAxis) < deadzone) xAxis = 0;
    //if (abs(yAxis) < deadzone) yAxis = 0;
