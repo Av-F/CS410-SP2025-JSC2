@@ -15,3 +15,6 @@ Development Steps:
 • Process movement data using ESP32.
 • Send joystick commands via Bluetooth or WiFi.
 Key Components: ESP32, Joystick Module, Analog Rotation Sensor, Digital Push Button.
+
+# Code Documentation
+https://av-f.github.io/CS410-SP2025-JSC2/#
