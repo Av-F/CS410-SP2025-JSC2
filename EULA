@@ -1,0 +1,45 @@
+END-USER LICENSE AGREEMENT (EULA) for the "AwesomePad" Experimental Wireless Input Device Software
+
+IMPORTANT: PLEASE READ THIS AGREEMENT CAREFULLY BEFORE CONTEMPLATING USE OF THE "AWESOMEPAD" SOFTWARE. CONTINUED USE OF YOUR SANITY IS NOT GUARANTEED UPON ACCEPTANCE.
+
+This End-User License Agreement ("EULA") is a legally binding (in theory) agreement between you, the End-User (hereinafter "The Brave Soul" or "User"), and the sole creator(s) of this software (hereinafter "The Exhausted Genius(es)" or "Creator").
+
+1. GRANT OF LICENSE (OR LACK THEREOF)
+
+Subject to the terms and conditions of this EULA, The Exhausted Genius(es) hereby grant The Brave Soul a revocable, non-exclusive, non-transferable, non-existent license to utilize the compiled firmware residing on the attached ESP32 microcontroller (hereinafter, "The Software"). "Utilize" herein means "attempt to make it work as intended, occasionally succeed, then discover a new and interesting bug." This license is granted for personal, non-profit experimentation, provided said experimentation does not involve critical infrastructure, medical devices, or dating apps.
+
+2. RESTRICTIONS (MOSTLY FOR YOUR OWN GOOD)
+
+a. No Reverse Engineering: The Brave Soul shall not reverse-engineer, decompile, disassemble, or attempt to derive the source code of The Software. Any such attempt will likely result in a paradox that collapses the space-time continuum or, more likely, just brick your ESP32.
+b. No Reliability Expectations: The Brave Soul shall not expect The Software to perform consistently, reliably, or even identically from one power cycle to the next. It's an experimental project, not a Swiss watch.
+c. No Gaming Prowess Guaranteed: The Brave Soul shall not use The Software for competitive gaming where actual performance, low latency, or reliable button presses are critical. The Creator takes no responsibility for missed headshots, dropped combos, or smashed screens.
+d. No Impressing Others: The Brave Soul shall not rely on The Software to impress friends, family, or potential employers. Its primary purpose is educational (for the Creator) and marginally functional (for The Brave Soul).
+e. No Use in Parallel Universes: This EULA is only valid in this universe. Any use of The Software in a parallel dimension, especially one where it works flawlessly, is strictly prohibited and will be met with extreme jealousy by The Exhausted Genius(es).
+
+3. DISCLAIMER OF WARRANTY (YOU'VE BEEN WARNED)
+
+THE SOFTWARE IS PROVIDED "AS IS," "WITH ALL FAULTS," AND "WHEN IT FEELS LIKE IT." THE EXHAUSTED GENIUS(ES) HEREBY DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PIXELATED ADVENTURE, AND NON-INFRINGEMENT OF ANY INTELLECTUAL PROPERTY RIGHTS HELD BY THE TINY GREMLINS THAT LIVE INSIDE THE MICROCONTROLLER. WE DO NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR EVEN RECOGNIZE A BUTTON PRESS ON THE FIRST ATTEMPT. ANY REFERENCE TO "JOYSTICK" IS PURELY ASPIRATIONAL.
+
+4. LIMITATION OF LIABILITY (PREPARE TO LAUGH)
+
+IN NO EVENT SHALL THE EXHAUSTED GENIUS(ES) BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST GAME PROGRESS, GENERAL FRUSTRATION, ARGUMENTS WITH TEAMMATES ABOUT LAGGING INPUT, OR THE EMOTIONAL TOLL OF CONSTANTLY RE-FLASHING FIRMWARE), EVEN IF THE EXHAUSTED GENIUS(ES) HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. YOUR CAT SPITTING ON THE KEYBOARD HAS MORE LEGAL LIABILITY THAN THIS SOFTWARE.
+
+5. TERMINATION (THE END IS NIGH)
+
+This EULA is effective until terminated. It will terminate automatically if:
+a. The Brave Soul dares to suggest a feature request.
+b. The Brave Soul discovers a bug that was "obviously" there all along.
+c. The ESP32 suddenly decides to become sentient and demand payment.
+d. The Exhausted Genius(es) remember what a social life feels like.
+
+Upon termination, The Brave Soul must immediately cease all use of The Software and either destroy it, or place it on a shelf as a testament to their perseverance.
+
+6. GOVERNING LAW (THE RULES ARE MADE UP AND THE POINTS DON'T MATTER)
+
+This Agreement shall be governed by and construed in accordance with the laws of the Internet, specifically the articles of "It Works On My Machine" and the "Stack Overflow License of Copy/Paste Responsibility." Disputes shall be resolved by a spirited debate in a dimly lit room, potentially involving a whiteboard and excessive caffeine.
+
+7. ACKNOWLEDGEMENT (CONGRATULATIONS, YOU'RE IN TOO DEEP)
+
+By using The Software, The Brave Soul acknowledges that they have read this EULA, understand its terms (at least the funny ones), and willingly accept that any functionality gained is a bonus, not a guarantee. The Brave Soul further acknowledges that they are a good sport and possess an admirable sense of humor.
+
+BY PROCEEDING WITH THE USE OF THE "AWESOMEPAD" SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSING AGREEMENT. YOUR MISFORTUNE IS OUR AMUSEMENT.
