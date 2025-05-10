@@ -1,0 +1,29 @@
+                                                                ESP 32 BLE gamepad User-End-Manual
+
+                                                                         Glossary:
+1) Materials
+2) steps
+
+
+                                                                        Materials:
+In order to run the project, you will need these items:
+* 1 Type C USB cable
+* 4 Buttons
+* 1 ESP-32
+* 1 Joystick module 
+* Arduino
+
+                                                                         Steps:
+1) Build the controller by plugging in the ESP-32 module and using male to male pins plug in the x axis pin to ESP-32's D35, Y axis to D26,
+A button to the bread board's 13, B button to 14, Start button to 15 and select to 12. You can reach these areas with resistors and other cables, 
+also ensure that the joystick grnd is  plugged into the ESP-32 GRND and joystick V goes to VIN. 
+2) Download Arduino and in the Arduino library, install the BLE gamepad library
+3) Use the prototype_V1.ino program with your controller as all of the button pins are mapped accordingly
+4) Ensure that the Arduino can read the ESP-32 when plugged into the type C cable (the ESP should have a light glowing red).
+5) Hit the upload button for the code to be transmitted to the ESP 32
+6) Once the code has successfully ran, go to where you'd like to use the controller's Bluetooth settings and find "The Better Controller" and hit accept.    
+
+                                                                          MISC
+If you're on PC, you must have a steam account where in the account, you must go to Big Picture Mode and condifure the controller there.
+You can use the controller on your phone and in on apps where controller configuration is avaliable and on PC using Steam's big picture mode
+
