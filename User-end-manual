@@ -27,3 +27,5 @@ also ensure that the joystick grnd is  plugged into the ESP-32 GRND and joystick
 If you're on PC, you must have a steam account where in the account, you must go to Big Picture Mode and condifure the controller there.
 You can use the controller on your phone and in on apps where controller configuration is avaliable and on PC using Steam's big picture mode
 
+To visit code documentation go to: https://av-f.github.io/CS410-SP2025-JSC2/#
+
