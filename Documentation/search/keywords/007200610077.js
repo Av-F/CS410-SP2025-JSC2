@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("raw",["Variable"],[["rawX",,[[,,,,0,"File:prototype_V1.cpp:rawX"]]],["rawY",,[[,,,,0,"File:prototype_V1.cpp:rawY"]]]]);

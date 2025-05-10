@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("las",["Variable"],[["lastDirection",,[[,,,,0,"File:prototype_V1.cpp:lastDirection"]]]]);
