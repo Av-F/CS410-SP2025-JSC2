@@ -5,12 +5,12 @@
 //using the functions in the BleGamepad library we create a new gamepad
 BleGamepad bleGamepad;
 //the x pin on the joystick is on j13, so set it in the code
-const int xPin = 35;
+const int xPin = 34;
 
 //Y axis addition
 const int deadzone = 200; // Adjust this for stick drift
 int lastDirection = 0; // -1 for up, 1 for down, 0 for neutral
-const int yAxisPin = 27; // Analog pin for Y-axis
+const int yAxisPin = 25; // Analog pin for Y-axis
 
 // Buttons
 // Joystick button
